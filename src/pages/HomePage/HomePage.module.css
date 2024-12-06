@@ -1,0 +1,166 @@
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px; /* Added padding for better spacing */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+.questions_container {
+  transition: transform 0.5s ease;
+}
+.questions_container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size */
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.ask_question {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #fff; /* White background for a clean look */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  margin-bottom: 20px; /* Spacing between sections */
+}
+
+.ask_question input {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px; /* Increased font size for readability */
+  width: 100%; /* Make input fill its container */
+}
+
+.ask_user {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px; /* Added spacing */
+}
+
+.title {
+  padding: 20px;
+  font-size: 24px; /* Larger title font */
+  font-weight: bold; /* Make the title stand out */
+  color: #333; /* Darker text color for better contrast */
+  text-align: center; /* Center the title */
+}
+
+.icon {
+  color: grey;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+.ask_user_info {
+  display: flex;
+  gap: 30px;
+  align-items: center; /* Align items vertically */
+}
+
+.ask_question_text {
+  padding: 10px 20px;
+  /* border: 1px solid #eae7e7; */
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  font-size: 20px; /* Increased font size */
+}
+
+.see_more_container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.see_more_button,
+.see_less_button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.see_more_button:hover,
+.see_less_button:hover {
+  background-color: #0056b3;
+}
+
+.see_more_button:active,
+.see_less_button:active {
+  background-color: #004080;
+  transform: translateY(2px);
+}
+.ask_arrow {
+  vertical-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #004080;
+}
+.icon {
+  color: #004080;
+}
+@media screen and (max-width: 800px) {
+  .main_container {
+    width: 100%;
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items to fit the width */
+  }
+
+  .container button {
+    width: 100%; /* Make button full-width on small screens */
+    margin-top: 10px; /* Add margin on top */
+  }
+
+  .ask_question input {
+    width: 100%; /* Ensure input fills the width */
+  }
+
+  .ask_question {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px; /* Smaller title font for small screens */
+  }
+}

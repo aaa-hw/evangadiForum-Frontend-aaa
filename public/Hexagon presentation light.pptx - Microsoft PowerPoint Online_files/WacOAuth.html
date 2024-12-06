@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0175)https://oauth.officeapps.live.com/oa/WacOAuth.aspx?replyUrl=https://usc-powerpoint.officeapps.live.com&usid=cd718e92-88a1-45e5-adad-f519e4180082&WacUserType=WOPI&sv=1&msalv3=1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" foxified=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+
+</title>
+		<style id="sharedauthstyles" nonce=""></style>
+		<script type="text/javascript" nonce="">
+			function loadBackupScript() {
+				var backupScript = document.createElement('script');
+				backupScript.setAttribute("data-allowedapps", "5a4eed13-c4c4-4b4c-9506-334ab200bf31;93d53678-613d-4013-afc1-62e9e444a0a5");
+				backupScript.setAttribute("data-allowedaudiences", "e03a13ee-9730-4cae-8525-47559c8cf18a;https://augloop.office.com/v2;394866fc-eedb-4f01-8536-3ff84b16be2a;liveprofilecard.access;https://shredder-us.osi.office.net/;https://substrate.office.com;https://pptservicescast.officeapps.live.com;officespeech.access;https://dcg.microsoft.com/;https://consentservice.microsoft.com/web;https://consentservice.microsoft.com/checkin;https://attributes.engagement.office.com;84a0e9dd-6e58-4aad-82af-ebe485acd09d/.default;84a0e9dd-6e58-4aad-82af-ebe485acd09d;");
+				backupScript.setAttribute("data-origin", "https://usc-powerpoint.officeapps.live.com");
+				backupScript.setAttribute("data-scriptload", "PRODUCTION.100: 20241009.3");
+				script.setAttribute("fetchpriority", "high");
+				backupScript.id = "sharedauthscript";
+				backupScript.src = "https://wise-m-backup.public.onecdn.static.microsoft/wise/owl/sharedauthclientmsal.2d78a272d49cfe3514bc.js";
+				backupScript.integrity = "sha384-qNJrApIK6oKtDDYQz2w+RXnBtGLRelfzPddLWIx4jKZS6zkXWTPZMUezyLMabUBK";
+				backupScript.nonce = "4a46d7fb-523e-4e9b-9602-1f63db5c157a";
+				backupScript.crossOrigin = "anonymous";
+				script.onload = function () {
+					if ("True" === "True") {
+						logLoadScriptResult(true, true, performance.now() - startTime);
+					}
+				};
+				script.onerror = function () {
+					if ("True" === "True") {
+						logLoadScriptResult(false, true, performance.now() - startTime);
+					}
+				};
+				document.head.appendChild(backupScript);
+			}
+
+			function loadScript() {
+				var script = document.createElement('script');
+				script.setAttribute("data-allowedapps", "5a4eed13-c4c4-4b4c-9506-334ab200bf31;93d53678-613d-4013-afc1-62e9e444a0a5");
+				script.setAttribute("data-allowedaudiences", "e03a13ee-9730-4cae-8525-47559c8cf18a;https://augloop.office.com/v2;394866fc-eedb-4f01-8536-3ff84b16be2a;liveprofilecard.access;https://shredder-us.osi.office.net/;https://substrate.office.com;https://pptservicescast.officeapps.live.com;officespeech.access;https://dcg.microsoft.com/;https://consentservice.microsoft.com/web;https://consentservice.microsoft.com/checkin;https://attributes.engagement.office.com;84a0e9dd-6e58-4aad-82af-ebe485acd09d/.default;84a0e9dd-6e58-4aad-82af-ebe485acd09d;");
+				script.setAttribute("data-origin", "https://usc-powerpoint.officeapps.live.com");
+				script.setAttribute("data-scriptload", "PRODUCTION.100: 20241009.3");
+				script.setAttribute("fetchpriority", "high");
+				script.id = "sharedauthscript";
+				script.src = "https://wise.public.cdn.office.net/wise/owl/sharedauthclientmsal.2d78a272d49cfe3514bc.js";
+				script.integrity = "sha384-qNJrApIK6oKtDDYQz2w+RXnBtGLRelfzPddLWIx4jKZS6zkXWTPZMUezyLMabUBK";
+				script.nonce = "4a46d7fb-523e-4e9b-9602-1f63db5c157a";
+				script.crossOrigin = "anonymous";
+				script.onload = function () {
+					if ("True" === "True") {
+						logLoadScriptResult(true, false, performance.now() - startTime);
+					}
+				};
+				script.onerror = function () {
+					script.parentNode?.removeChild(script);
+					if ("True" === "True") {
+						logLoadScriptResult(false, false, performance.now() - startTime);
+					}
+					loadBackupScript();
+				};
+				document.head.appendChild(script);
+			}
+
+			function loadAjaxAndLoadScript() {
+				var ajaxScript = document.createElement('script');
+				ajaxScript.src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js";
+				ajaxScript.nonce = "4a46d7fb-523e-4e9b-9602-1f63db5c157a";
+				ajaxScript.onload = function () {
+					loadScript();
+				};
+				document.head.appendChild(ajaxScript);
+			}
+
+			function logLoadScriptResult(isSuccess, isBackup, elapsedMilliseconds) {
+				console.log(JSON.stringify({ isSuccess, isBackup, elapsedMilliseconds }));
+				$.ajax({
+					type: "POST",
+					url: "WacOauth.aspx/LogLoadScriptResult",
+					data: JSON.stringify({ isSuccess, isBackup, elapsedMilliseconds }),
+					contentType: 'application/json; charset=utf-8',
+					dataType: 'json',
+					error: function (XMLHttpRequest, textStatus, errorThrown) {
+						console.error("Request: " + XMLHttpRequest.toString() + "\n\nStatus: " + textStatus + "\n\nError: " + errorThrown);
+					},
+				});
+			}
+
+			var startTime = performance.now();
+			if ("True" == "True") {
+				loadAjaxAndLoadScript();
+			} else {
+				loadScript();
+			}
+		</script><script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+	<input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="3"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script><script data-allowedapps="5a4eed13-c4c4-4b4c-9506-334ab200bf31;93d53678-613d-4013-afc1-62e9e444a0a5" data-allowedaudiences="e03a13ee-9730-4cae-8525-47559c8cf18a;https://augloop.office.com/v2;394866fc-eedb-4f01-8536-3ff84b16be2a;liveprofilecard.access;https://shredder-us.osi.office.net/;https://substrate.office.com;https://pptservicescast.officeapps.live.com;officespeech.access;https://dcg.microsoft.com/;https://consentservice.microsoft.com/web;https://consentservice.microsoft.com/checkin;https://attributes.engagement.office.com;84a0e9dd-6e58-4aad-82af-ebe485acd09d/.default;84a0e9dd-6e58-4aad-82af-ebe485acd09d;" data-origin="https://usc-powerpoint.officeapps.live.com" data-scriptload="PRODUCTION.100: 20241009.3" fetchpriority="high" id="sharedauthscript" src="https://wise.public.cdn.office.net/wise/owl/sharedauthclientmsal.2d78a272d49cfe3514bc.js" integrity="sha384-qNJrApIK6oKtDDYQz2w+RXnBtGLRelfzPddLWIx4jKZS6zkXWTPZMUezyLMabUBK" crossorigin="anonymous"></script></head>
+	<body data-new-gr-c-s-check-loaded="14.1200.0" data-gr-ext-installed="">
+		
+	
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
